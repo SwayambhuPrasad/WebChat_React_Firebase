@@ -18,4 +18,25 @@
     background-color: #224957;
     border: 2px solid rgb(246, 242, 241);
     width: 40vw;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.signInContainer>p {
+    margin: 15px 0;
+}
+
+.signInContainer>input {
+    margin-bottom: 15px;
+    width: 80%;
+    height: 25px;
+    border-radius: 5px;
+    background: transparent;
+    border: none;
+    background-color: #5c7882;
+}
+
+input::placeholder {
+    color: #fff;
+    padding: 5px 10px;
 }

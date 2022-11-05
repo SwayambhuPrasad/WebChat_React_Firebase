@@ -7,8 +7,8 @@ function SigninPage() {
             <div className='signInContainer'>
                 <h1> Sign in</h1>
                 <p>Sign in and start managing your candidates!</p>
-                <input type="email" />
-                <input type="password" />
+                <input type="email" placeholder='login' />
+                <input type="password" placeholder='password' />
                 <div>
                     <input type="checkbox" id='loginCheckBox' />
                     <label htmlFor="loginCheckBox"> Remember me </label>
