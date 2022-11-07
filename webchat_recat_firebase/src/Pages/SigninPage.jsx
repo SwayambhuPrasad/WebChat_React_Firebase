@@ -1,10 +1,10 @@
 import React from 'react'
-import './SigninPage.scss'
+import './Pages.scss'
 
 function SigninPage() {
     return (
-        <div className='signInBackground'>
-            <div className='signInContainer'>
+        <div className='Background'>
+            <div className='Container'>
                 <h1> Sign in</h1>
                 <p>Sign in and start chatting!</p>
                 <input type="email" placeholder='login' />
