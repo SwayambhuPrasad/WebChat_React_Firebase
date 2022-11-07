@@ -20,13 +20,13 @@
         background-color: rgba(53, 50, 50, 0.5);
         display: flex;
         flex-direction: column;
-        border-radius: 1rem;
-        padding: 2rem 4rem;
+        border-radius: 16px;
+        padding: 32px 64px;
 
         h1 {
             text-align: center;
             color: #fff;
-            margin-bottom: 2rem;
+            margin-bottom: 32px;
         }
 
         p {
@@ -37,16 +37,15 @@
         }
 
         label {
-            color: rgb(220, 215, 215);
-            display: block;
-            margin-bottom: 7px;
+            color: #fff;
+            margin-bottom: 8px;
         }
 
         input {
             height: 1.9rem;
             padding: 2px;
             width: 100%;
-            font-size: 1rem;
+            font-size: 16px;
             border-radius: 5px;
             border: none;
             margin-bottom: 10px;
@@ -56,11 +55,11 @@
 
         button {
             display: block;
-            margin: 1rem 0;
+            margin: 16px 0;
             border-radius: 5px;
             width: 100%;
-            padding: 0.5rem;
-            font-size: 1rem;
+            padding: 8px;
+            font-size: 16px;
             font-weight: bold;
         }
 
@@ -79,7 +78,7 @@
             }
 
             a {
-                right: 0px;
+                right: 0;
                 position: absolute;
                 text-align: right;
             }
