@@ -7,7 +7,7 @@ export default function RegisterPage() {
             <div className="registerPageBody">
                 <div className="container">
                     <form action="">
-                        <h1>Register Here</h1>
+                        <h1>Register There</h1>
                         <label htmlFor="name">Name</label>
                         <input type="text" placeholder="Name" id='name' />
                         <label htmlFor="username">Username</label>
@@ -18,6 +18,7 @@ export default function RegisterPage() {
                         <input type="password" placeholder="Password" id='password' />
                         <button>Register</button>
                     </form>
+                    <p>Already on Web-Chat? <a href="">Sign in</a></p>
                 </div>
             </div>
         </>
