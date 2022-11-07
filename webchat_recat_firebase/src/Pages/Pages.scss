@@ -63,6 +63,10 @@
             font-weight: bold;
         }
 
+        a {
+            color: aquamarine;
+        }
+
         .rememberMe {
             position: relative;
 
@@ -78,6 +82,7 @@
             }
 
             a {
+                color: aquamarine;
                 right: 0;
                 position: absolute;
                 text-align: right;
