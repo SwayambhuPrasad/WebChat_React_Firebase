@@ -17,7 +17,7 @@ export default function RegisterPage() {
                 <label htmlFor="password">Password</label>
                 <input type="password" placeholder="Password" id='password' />
                 <button>Sign Up</button>
-                <p className='signInLink'>Already on Web-Chat? <button onClick={() => { navigate("/signup") }}>Sign In</button></p>
+                <p className='signInLink'>Already on Web-Chat? <button onClick={() => { navigate("/") }}>Sign In</button></p>
             </div>
         </div>
     );
