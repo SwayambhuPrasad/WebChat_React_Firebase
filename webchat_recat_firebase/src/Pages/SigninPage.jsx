@@ -1,7 +1,10 @@
 import React from 'react'
 import './Pages.scss'
+import { useNavigate } from "react-router-dom"
+
 
 function SigninPage() {
+    const navigate = useNavigate();
     return (
         <div className='Background'>
             <div className='Container'>
@@ -13,7 +16,7 @@ function SigninPage() {
                 <div className='rememberMe'>
                     <input type="checkbox" id='loginCheckBox' />
                     <label htmlFor="loginCheckBox"> Remember me </label>
-                    <a href=""> Forgot Password</a>
+                    <button onClick={() => { navigate("/register") }}>Register</button>
                 </div>
             </div>
         </div>
