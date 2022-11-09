@@ -2,7 +2,7 @@ import React from 'react';
 import './Pages.scss'
 import { useNavigate } from "react-router-dom"
 import { useState } from 'react'
-import { createUserWithEmailAndPassword, signOut, } from 'firebase/auth'
+import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../firebase-config'
 
 
@@ -10,9 +10,7 @@ export default function RegisterPage() {
     const [registerName, setRegisterName] = useState("");
     const [RegisterEmail, setRegisterEmail] = useState("");
     const [RegisterPassword, setRegisterPassword] = useState("");
-    const _signOut = async () => {
-        await signOut(auth)
-    }
+
     const register = async () => {
         try {
             const user = await createUserWithEmailAndPassword(auth, RegisterEmail, RegisterPassword)

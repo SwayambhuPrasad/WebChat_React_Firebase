@@ -3,7 +3,6 @@ import './Pages.scss'
 import { useNavigate } from "react-router-dom"
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../firebase-config'
-import { Home } from './Home'
 
 function SigninPage() {
     const [loginEmail, setLoginEmail] = useState("");
