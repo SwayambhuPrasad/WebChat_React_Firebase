@@ -1,18 +1,19 @@
 
 import { initializeApp } from "firebase/app";
 import { getAuth } from 'firebase/auth'
+import { getFirestore } from "@firebase/firestore"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAA-d1Qj0Lu7Tn2xpQWmw_A96hNly1g1kc",
-    authDomain: "webchat-react-firebase.firebaseapp.com",
-    projectId: "webchat-react-firebase",
-    storageBucket: "webchat-react-firebase.appspot.com",
-    messagingSenderId: "986278783208",
-    appId: "1:986278783208:web:9b82cdc81a85b7ddf4415d",
-    measurementId: "G-LRWQX3D29E"
+    apiKey: "AIzaSyCl3Wi2mPluHEUU0fY_71RkyLOh8sSgrNg",
+    authDomain: "webchat-react-firebase-9cc40.firebaseapp.com",
+    projectId: "webchat-react-firebase-9cc40",
+    storageBucket: "webchat-react-firebase-9cc40.appspot.com",
+    messagingSenderId: "919759829036",
+    appId: "1:919759829036:web:1084d3877ae9fadf74f989"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app)
+const db = getFirestore(app)
