@@ -1,18 +1,18 @@
-import { React, useState } from 'react'
+import React, { useState, useContext } from 'react'
+import { LoginContext } from '../Contexts/loginContext'
 import './Pages.scss'
 import { useNavigate } from "react-router-dom"
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../firebase-config'
 
 function SigninPage() {
-    const [loginEmail, setLoginEmail] = useState("");
-    const [loginPassword, setLoginPassword] = useState("");
+    const { loginEmail, setLoginEmail, loginPassword, setLoginPassword, setShowHome } = useContext(LoginContext)
 
     const login = async () => {
         try {
             const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
             //_signOut;
-            navigate("/Home")
+            setShowHome(true)
             console.log(user)
         }
         catch (error) {
